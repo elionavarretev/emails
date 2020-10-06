@@ -28,6 +28,26 @@ $ mvn install
 
 The first time you run this it may take some time to download the dependencies.
 
+# How To Edit Test Cases
+Open dat.xlsx file in this path: 
+```sh
+../src/test/resources/DataDriven/dat.xlsx
+```
+> Make sure that the correct path in your computer.
+
+COLUMNS:
+* bandeja: The name of the mailinator tray is placed.
+
+    Example:
+[![N|Solid](https://raw.githubusercontent.com/elionavarretev/elionavarretev.github.io/master/assets/doc/iku1.PNG)]()
+
+* asunto: The subject of the email so that the robot can identify it and enter the email.
+[![N|Solid](https://raw.githubusercontent.com/elionavarretev/elionavarretev.github.io/master/assets/doc/iku2.PNG)]()
+
+* link: Each link is validated one by one. The link that the email should have is placed.
+[![N|Solid](https://raw.githubusercontent.com/elionavarretev/elionavarretev.github.io/master/assets/doc/iku3.PNG)]()
+
+
 # How To Run From Command Line
 
 ```sh
