@@ -1,7 +1,7 @@
-[![N|Solid](http://www.thucydides.info/img/serenity-bdd.png)](http://www.thucydides.info/#/)
+[![N|Solid](https://2.bp.blogspot.com/-VUZybgJyzTE/WRKDMNCahvI/AAAAAAAAABA/4Ng2zbgjZeInJqAYq246Iar6MxVNIhj7ACLcB/s1600/EBEL.png)](https://www.belcorp.biz/en/)
 
 # Serenity BDD
-This project shows Serenity framework integration to run sample test case for Belcorp.
+This project shows Serenity framework integration to run sample test case for IKU's emails.
 
 
 # Setting up
@@ -16,7 +16,7 @@ Java IDE:
 Now clone this project to your local machine:
 
 ```sh
-$ git clone https://github.com/elionavarretev/SerenityBDD-Belcorp.git
+$ git clone https://github.com/elionavarretev/emails-Belcorp.git
 ```
 
 # Building the project
