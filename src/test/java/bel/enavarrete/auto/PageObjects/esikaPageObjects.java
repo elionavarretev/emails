@@ -6,8 +6,10 @@ import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.annotations.NamedUrls;
 import net.thucydides.core.annotations.NamedUrl;
+import org.junit.Assert;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -47,5 +49,20 @@ public class esikaPageObjects extends PageObject{
 		Serenity.takeScreenshot();
 	}
 
+	public boolean validarUPSS() throws InterruptedException {
+		Thread.sleep(500);
+		Serenity.takeScreenshot();
 
+		boolean isLabelPresent = true;
+		try {
+			find(By.xpath("//a[contains(text(),'IR AL HOME')]")).click();
+		} catch (Exception e) {
+			isLabelPresent = false;
+		}
+
+		if(isLabelPresent){
+			fail("UPSS! El enlace que buscas está roto. Sigue navegando.");
+		}
+	return  isLabelPresent;
+	}
 }

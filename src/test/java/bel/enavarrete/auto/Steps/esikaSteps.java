@@ -27,7 +27,12 @@ public class esikaSteps {
 	@Step
 	public void validarlinks(String strLinks) throws InterruptedException {
 		ebayObjects.validarlinks(strLinks);
+		ebayObjects.validarUPSS();
 	}
 
+	@Step
+	public void validarUPSS() throws InterruptedException {
+		ebayObjects.validarUPSS();
+	}
 
 }
